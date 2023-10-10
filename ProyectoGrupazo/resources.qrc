@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Images/padlock.png</file>
+        <file>Images/user.png</file>
+        <file>Images/logout.png</file>
+    </qresource>
+    <qresource prefix="/logo">
+        <file>Images/Logo.png</file>
+        <file>Images/Logo2.png</file>
+        <file>Images/Logo3.png</file>
+        <file>Images/Logo4.png</file>
+        <file>Images/Logo5.png</file>
+    </qresource>
+    <qresource prefix="/password_visibility">
+        <file>Images/eye open.png</file>
+        <file>Images/eye_close.png</file>
+    </qresource>
+</RCC>

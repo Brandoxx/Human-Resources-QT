@@ -1,0 +1,11 @@
+UPDATE Constancias
+SET Salario_Bruto = (
+    SELECT Salario_Bruto
+    FROM DatosLaborales
+    WHERE DatosLaborales.Usuario = Constancias.Usuario
+),
+Salario_Neto = (
+    SELECT Salario_Neto
+    FROM DatosLaborales
+    WHERE DatosLaborales.Usuario = Constancias.Usuario
+);

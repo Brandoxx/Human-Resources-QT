@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SupervisorMenu</class>
+ <widget class="QWidget" name="SupervisorMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>464</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SupervisorMenu</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*
+#menuForm { 
+background: rba(0, 0, 0, 80);
+border-radius: 8px;
+}
+*/
+#SupervisorMenu {background: rgba(255, 255, 255, 1)}
+#topPanel {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #9bd8e7, stop:0.2 #7fcde3, stop:0.4 #63c3df, stop:0.6 #47b8db, stop:0.8 #2bacd7, stop:1 #009ed2);
+}
+
+/*
+#loginButton {
+color: black;
+backgroun-color: #27a9e3;
+border-width: 0px;
+border-radius: 3px;
+}
+*/
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="topPanel" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="topMargin">
+       <number>55</number>
+      </property>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>150</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/logo/Images/Logo5.png</pixmap>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="menuForm" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>350</width>
+         <height>272</height>
+        </size>
+       </property>
+       <widget class="QPushButton" name="consultaButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>0</y>
+          <width>221</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial Black</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#consultaButton {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #9bd8e7, stop:0.2 #7fcde3, stop:0.4 #63c3df, stop:0.6 #47b8db, stop:0.8 #2bacd7, stop:1 #009ed2);
+border: none;
+color: #fff;
+padding: 10px 20px;
+border-radius: 4px;
+font-weight: 1000;
+font-family: &quot;Arial Black&quot;, sans-serif;
+font-weight: bold;
+font-size: 15px;
+}
+
+#consultaButton:pressed {
+background-color: #cccccc;
+}
+
+#consultaButton:checked {
+background-color: #cccccc;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Consulta de 
+ Información Laboral</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="solicitudButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>70</y>
+          <width>221</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial Black</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#solicitudButton {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #9bd8e7, stop:0.2 #7fcde3, stop:0.4 #63c3df, stop:0.6 #47b8db, stop:0.8 #2bacd7, stop:1 #009ed2);
+border: none;
+color: #fff;
+padding: 10px 20px;
+border-radius: 4px;
+font-weight: 1000;
+font-family: &quot;Arial Black&quot;, sans-serif;
+font-weight: bold;
+font-size: 15px;
+}
+
+#solicitudButton:pressed {
+background-color: #cccccc;
+}
+
+#solicitudButton:checked {
+background-color: #cccccc;
+}</string>
+        </property>
+        <property name="text">
+         <string>Solicitud de
+ Documentos</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="revisionButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>140</y>
+          <width>221</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial Black</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#revisionButton {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #9bd8e7, stop:0.2 #7fcde3, stop:0.4 #63c3df, stop:0.6 #47b8db, stop:0.8 #2bacd7, stop:1 #009ed2);
+border: none;
+color: #fff;
+padding: 10px 20px;
+border-radius: 4px;
+font-weight: 1000;
+font-family: &quot;Arial Black&quot;, sans-serif;
+font-weight: bold;
+font-size: 15px;
+}
+
+#revisionButton:pressed {
+background-color: #cccccc;
+}
+
+#revisionButton:checked {
+background-color: #cccccc;
+}</string>
+        </property>
+        <property name="text">
+         <string>Revisión de
+ Solicitudes</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="expedienteButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>210</y>
+          <width>221</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial Black</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#expedienteButton {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #9bd8e7, stop:0.2 #7fcde3, stop:0.4 #63c3df, stop:0.6 #47b8db, stop:0.8 #2bacd7, stop:1 #009ed2);
+border: none;
+color: #fff;
+padding: 10px 20px;
+border-radius: 4px;
+font-weight: 1000;
+font-family: &quot;Arial Black&quot;, sans-serif;
+font-weight: bold;
+font-size: 15px;
+}
+
+#expedienteButton:pressed {
+background-color: #cccccc;
+}
+
+#expedienteButton:checked {
+background-color: #cccccc;
+}</string>
+        </property>
+        <property name="text">
+         <string>Anotaciones al
+ Expediente</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="topMargin">
+      <number>20</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>305</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="logout">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>50</horstretch>
+         <verstretch>50</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#logout {
+background-color: white;
+/*padding: 10px 20px;*/
+border-radius: 4px;
+}
+
+#logout:pressed {
+background-color: white;
+}
+
+#logout:checked {
+background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/Images/logout.png</normaloff>:/icons/Images/logout.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>30</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
